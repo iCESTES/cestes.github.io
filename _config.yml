@@ -2,7 +2,7 @@ title:              CESTES
 email:              cestes@idiv.de
 description:        'A global database for metaCommunity Ecology:<br>Species, Traits, Environment and Space'
 author:             Alienor Jeliazkov
-baseurl:            "/startbootstrap-clean-blog-jekyll"
+baseurl:             ""# "/startbootstrap-clean-blog-jekyll"
 url:                "https://icestes.github.io"
 
 # Social Profiles
