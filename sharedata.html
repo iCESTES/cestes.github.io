@@ -1,0 +1,86 @@
+---
+layout: page
+title: How to share your data?
+description: You want to share data with us? Please follow the tutorial below.
+background: '/img/bg-sharedata.jpg'
+---
+<font size="2">Photo by Brian McMahon on Unsplash.</font>
+<br>
+<br>
+<ol>
+  <li>What are the eligibility criteria to the CESTES database?</li>
+  <li>How to format your data?</li>
+  <li>How to send your data?</li>
+  <li>How will your contribution be acknowledged?</li>
+  <li>Remarks.</li>
+</ol>
+
+<h2 class="section-heading">1. Eligibility criteria</h2>
+For your dataset to be eligible to the CESTES database, it has to	include the following <b>4 data matrices</b>: 
+<ul>
+  <li><b>"comm"</b>: matrix of species (or any taxonomic unit) abundances/counts/density or presences/absences recorded in multiple sites (i.e. >= 10 sites) (for other cases, see <i>5. Remarks</i>)</li>
+  <li><b>"traits"</b>: a corresponding matrix of species trait information, i.e. any trait, be it functional, biological, life-history traits, either quantitative or categorical, functional group, etc., with traits related to the species which are reported in “comm”</li>
+  <li><b>"envir"</b>: a corresponding matrix of environmental variables in the broad sense of environment, i.e. any type of biotic and abiotic conditions or habitat characteristics relevant to the community of interest according to the original study/project, with variables related to the sites which are reported in “comm”</li>
+  <li><b>"coord"</b>: a corresponding matrix of spatial coordinates, with the longitude and the latitude of the sites which are reported in “comm” <font color="red"> (in WGS84 Geographical Coordinate System)</font></li>
+</ul>
+<b>AND to	be formatted</b> according to the guidelines provided below.
+<br>
+
+<h2 class="section-heading">2. Formatting guidelines</h2>
+Each dataset has to include:
+<ol>
+  <li>the <b>four data matrices</b> as described above: <i>comm, traits, envir</i> and <i>coord</i></li>
+  <li>a <b>metadata table <i>DataKey</i></b> </li>
+  <li>a <b>species list <i>splist</i></b> corresponding to the species/taxonomic units recorded in “comm”.</li>
+</ol>
+
+<img width="90%" src="img/datasetstructure.png" alt="Dataset structure">
+
+<h3> a. Accepted file formats</h3>
+  Comma Separated Value files (.csv, .csv2) / spreadsheet files (.ods, .xls, .xlsx) / R objects (e.g.     list, tibble)
+
+<!-- <h3> b. Format of the four data matrices</h3>
+<ul>
+  <li><b>comm</b>: matrix of species abundances/counts/density or presences/absences, with species in columns and sites in rows</li> 
+  <li><b>traits</b>: matrix of species trait information, with traits in columns and species in rows</li>
+  <li><b>envir</b>: matrix of environmental variables, with variables in columns and sites in rows</li>
+  <li><b>coord</b>: matrix of spatial coordinates in the WGS84 Geographical Coordinate System, with     longitude and latitude in columns and sites in rows.</li>
+</ul> -->
+
+<h3> b. Format of the metadata table <i>DataKey</i></h3>
+Each dataset has to be accompanied with a table (<i>DataKey</i>) that describes every data entry with the following information: 
+<ul>
+<li><i>Matrix</i>: which matrix does the entry refers to, i.e. any one among comm, traits, envir and coord</li>
+<li><i>Entry</i>: the spelling of the entry name as it was reported in the four data sheets </li>
+<li><i>Variable</i>: the variable the entry name refers to </li>
+<li><i>Unit or factor levels</i>: the scientific unit, type of variable and/or levels of factor of the variable </li>
+<li><i>Description</i>: brief description of the variable or notes where relevant</li>
+</ul>
+Example of metadata structure with respect to the data matrices:
+<img width="90%" src="img/datakeystructure.png" alt="Datakey structure">
+
+<h3> c. Format of the species list <i>splist</i></h3>
+The species list has to report the full name of the taxa that are recorded in the comm data matrix, along with the taxonomic list reference. Make sure that there is a common column linking <i>comm</i> and <i>splist</i>.
+
+
+<h2 class="section-heading">3. Sending the data</h2>
+Send <b>your file(s) + the reference to the original publication/project + affiliation + email contact</b> via email to: <a href="mailto:cestes@idiv.de"><font color="blue"><b><u>cestes[at]idiv.de</u></b></font></a>.
+
+
+<h2 class="section-heading">4. Database update and citation</h2>
+If the new dataset fulfils CESTES’ requirements and is provided in the right format with the metadata information, it will be considered for integration to the CESTES database. The data will be integrated in the database and uploaded in the iDiv biodiversity data portal. 
+<br>This will update the database and generate <b>a new DOI</b> for the whole updated database, ensuring that the new contributors are acknowledged. Finally, the <b>new contributor becomes part of the <a href="http://127.0.0.1:4000/startbootstrap-clean-blog-jekyll/people"><font color="blue"><b><u>CESTES consortium</b></u></font></a>.</b> 
+
+
+<h2 class="section-heading">5. Remarks</h2>
+<ul>
+  <li>If your data: <br>
+-	do not have spatial coordinates but have the other three pieces of information, <br>
+AND/OR <br>
+-	do not have multiple site measurements (i.e. less than 10) but have temporal replicates,
+ 	it can be integrated in the non-spatial ancillary section of the CESTES database, <i><b>ceste</b></i>.</li>
+  <li>If you are willing to share data that include <b>individual-based trait measurements</b>, this will be considered for the extended version of CESTES database that will be the subject of a new promising collaborative project.</li> 
+<br> If interested, please contact the <a href="mailto:cestes@idiv.de"><font color="blue"><u>database manager</font></u></a>.
+</ul>
+
+
