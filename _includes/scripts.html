@@ -33,10 +33,11 @@
             url: "//formspree.io/{{ site.email }}",
             type: "POST",
             data: {
-              name: name,
-              email: email,
-              message: message
-            },
+                    name: name,
+                    email: email,
+                    message: message
+                },
+            dataType: "json",
             cache: false,
             success: function () {
               // Success message
