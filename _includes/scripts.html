@@ -32,11 +32,8 @@
           $.ajax({
             url: "//formspree.io/{{ site.email }}",
             method: "POST",
-            data: {
-              name: name,
-              email: email,
-              message: message
-            },
+            data: $(this).serialize(),
+             dataType: "json",
             cache: false,
             success: function () {
               // Success message
