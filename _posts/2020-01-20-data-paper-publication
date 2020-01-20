@@ -1,1 +1,17 @@
+---
+layout: post
+title: "Publication of the CESTES data paper!"
+subtitle: ""
+date: 2020-01-20 16:04:00 - 0100
+background: '/img/posts/matrix-356024_1920.jpg' 
+---
+<p><font size="2">Background image by Jonny Lindner from Pixabay</font>
+
+<p><font size="6">The data paper describing the CESTES database is now published in <i>Nature's Scientific Data</i>!</font></p>
+
+<p>See the data paper <a href="https://www.nature.com/articles/s41597-019-0344-7?proof=trueJul">here</a>.</p>
+
+<p>CESTES is a live database! To share your data with us, go to: <a href="http://127.0.0.1:4000/startbootstrap-clean-blog-jekyll/sharedata">SHARE DATA</a>.</p>
+
+<img width="70%" src="/img/posts/CESTESlogo.png" alt=" ">
 
